@@ -1,7 +1,3 @@
-### To Do ###
-# Get Data from Website
-# Format data
-# Save as JSON
 import requests
 from bs4 import BeautifulSoup
 
