@@ -5,8 +5,6 @@ URL = 'https://dev-test.hudsonstaging.co.uk/'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
-print(soup)
-print('-----')
 
 all_items = soup.find_all('div', class_=['product-tile', 'product-til'])
 
