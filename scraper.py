@@ -16,12 +16,14 @@ for product in all_items:
     details_array = details.find_all('p')
     quantity = int(details_array[0].text.replace('Quantity: ', ''))
     raw_price = details_array[1].text.replace('Price: $', '')
-
-    def fix_price(raw_price):
+    
+    def fix_price(price):
         try:
-            return int(raw_price)
+            return int(price)
         except ValueError:
-            return float(raw_price)
+            return float(price)
+
+    price = fix_price(raw_price)
     
 #    record = {
 #        "product":name,
@@ -36,11 +38,15 @@ for product in all_items:
 #    print(items)
 
     ### Individual Records ###
-    #print('Product Name:', name)
-    #print('Image Source:', image)
-    #print('Quantity:', quantity)
-    #print('Price:', price)
-    #print('-----')
+    print('Product Name:', name)
+    print(type(name))
+    print('Image Source:', image)
+    print(type(image))
+    print('Quantity:', quantity)
+    print(type(quantity))
+    print('Price:', price)
+    print(type(price))
+    print('-----')
 
     ### All details in seperate lists ###
     #record = []
