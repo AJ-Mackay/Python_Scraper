@@ -1,4 +1,4 @@
 Notes:
-I decided to try this exercise using Python. I noticed that one of the classes in a div had a typo, but found a work around. It was fun figuring out why the scraper was returning 19 instead of 20 products, but was easily solved once I figured out there was a missing letter and how to chain search categories together.
+I decided to try this exercise using Python. I noticed that one of the classes in a div had a typo, so I found a work around. It was fun figuring out why the scraper was returning 19 instead of 20 products, but was easily solved once I figured out there was a missing letter and how to chain search queries together.
 
-I'm sure there has to be an easy method of showing both decimal places where they exist (Eggs, Flour, Ice Cubes), and only one where they don't (Oranges), but I can get back to that later.
+I have not been able to get the formatting exactly the same for the json output as shown in the original e-mail, such as not showing the quotation marks around the image Urls and the price is not showing to all the decimal places when saved as a float.
