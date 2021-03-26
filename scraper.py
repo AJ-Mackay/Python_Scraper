@@ -26,10 +26,10 @@ for product in all_items:
 
     price = fix_price(raw_price)
     
-    record = {"product":name,"metadata":{"image_url":image,"quantity":quantity,"price":price}}
+    record = {"product":name,"metadata":{"image_url":image, "quantity":quantity, "price":price}}
     items.append(record)
 
 with open('results.json', 'w', encoding='utf-8') as write_file:
-    output = json.dumps(items, indent=4, separators=(',', ': '))
+    output = json.dumps(items, indent=2, separators=(',', ': '))
     write_file.write(output)
     
