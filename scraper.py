@@ -22,38 +22,12 @@ for product in all_items:
             return int(price)
         except ValueError:
             return float(price)
-
     price = fix_price(raw_price)
     
-#    record = {
-#        "product":name,
-#           "metadata":{
-#                "image_url":image,
-#                "quantity":quantity,
-#                "price":raw_price
-#            }
-#    }
+    for record in product:
+        record = {"product":name,"metadata":{"image_url":image,"quantity":quantity,"price":price}}
 
-#    items = json.dumps(record, indent=2, separators=(',', ': '))
-#    print(items)
-
-    ### Individual Records ###
-    print('Product Name:', name)
-    print(type(name))
-    print('Image Source:', image)
-    print(type(image))
-    print('Quantity:', quantity)
-    print(type(quantity))
-    print('Price:', price)
-    print(type(price))
-    print('-----')
-
-    ### All details in seperate lists ###
-    #record = []
-    #record.append(name)
-    #record.append(image)
-    #record.append(quantity)
-    #record.append(price)
-    #print(record)
-    
+    with open('results.json', 'w', encoding='utf-8') as write_file:
+        output = json.dumps(record, indent=4, separators=(',', ': '))
+        write_file.write(output)
     

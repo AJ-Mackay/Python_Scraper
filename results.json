@@ -1,0 +1,8 @@
+{
+    "product": "Coffee",
+    "metadata": {
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmX16ZYT0_zVdA_xEk-dYpqHsp0YeCpg30IZnsjLk_AoqOi1Od0A3hvyfLLIwIwJkkMcJn7OJP&usqp=CAc",
+        "quantity": 10,
+        "price": 5
+    }
+}
