@@ -5,3 +5,5 @@ I have not been able to get the formatting exactly the same for the json output 
 * additional indentation at the start of the metadata below the product name,
 * not showing the quotation marks around the image Urls, and
 * price does not display all decimal places when saved as type float.
+
+The output from this exercise can be found in the results.json file.
